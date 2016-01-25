@@ -3,8 +3,8 @@
 %{?nodejs_find_provides_and_requires}
 
 Name:       %{?scl_prefix}nodejs-chmodr
-Version:    0.1.0
-Release:    4%{?dist}
+Version:    1.0.2
+Release:    1%{?dist}
 Summary:    Recursively change UNIX file permissions
 License:    BSD
 Group:      System Environment/Libraries
@@ -45,6 +45,9 @@ rm -rf %{buildroot}
 %doc README.md LICENSE
 
 %changelog
+* Mon Nov 30 2015 Tomas Hrcka <thrcka@redhat.com> - 1.0.2-1
+- New upstream release
+
 * Thu Oct 17 2013 Tomas Hrcka <thrcka@redhat.com> - 0.1.0-4
 - replace provides and requires with macro
 
