@@ -4,7 +4,7 @@
 
 Name:       %{?scl_prefix}nodejs-chmodr
 Version:    1.0.2
-Release:    1%{?dist}
+Release:    3%{?dist}
 Summary:    Recursively change UNIX file permissions
 License:    BSD
 Group:      System Environment/Libraries
@@ -45,6 +45,12 @@ rm -rf %{buildroot}
 %doc README.md LICENSE
 
 %changelog
+* Tue Feb 16 2016 Zuzana Svetlikova <zsvetlik@redhat.com> - 1.0.2-3
+- Use macro in -runtime dependency
+
+* Tue Feb 16 2016 Tomas Hrcka <thrcka@redhat.com> - 1.0.2-2
+- Rebuild with new collection metapackage
+
 * Mon Nov 30 2015 Tomas Hrcka <thrcka@redhat.com> - 1.0.2-1
 - New upstream release
 
